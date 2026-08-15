@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSaathi Discounts</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #2c2c4a);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .discount-box {
+            background: rgba(255, 255, 255, 0.1);
+            border: 6px solid #99ffe6; /* Updated border color */
+            border-radius: 12px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #fff;
+        }
+
+        .discount-box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #99ffe6; /* Matching text color to the border */
+        }
+
+        .discount-box p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .discount-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer h1 {
+            font-size: 36px;
+            background: -webkit-linear-gradient(135deg, #99ffe6, #00e676);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer p {
+            font-size: 18px;
+            color: #99ffe6;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .discount-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <div class="discount-box">
+                <h2>TravelSaathi</h2>
+                <p>🎉 Get 20% off on all bookings! 🎉</p>
+            </div>
+            <div class="discount-box">
+                <h2>TravelMax</h2>
+                <p>🌍 Enjoy 15% off on international trips!</p>
+            </div>
+            <div class="discount-box">
+                <h2>ExploreMore</h2>
+                <p>🏖️ Save 10% on beach holidays!</p>
+            </div>
+            <div class="discount-box">
+                <h2>JetSetters</h2>
+                <p>✈️ Book now and get 25% off!</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>TravelSaathi</h1>
+        <p>Your journey begins here!</p>
+    </div>
+</body>
+</html>

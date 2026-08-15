@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://travelplann.com/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="An AI powered travel planner that creates personalized travel itineraries tailored to your preferences, budget, and schedule. Plan your next trip in minutes."
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://travelplann.com/apple-touch-icon.png"
+    />
+    <link
+      rel="manifest"
+      href="https://travelplann.com/manifest.json"
+      crossorigin="use-credentials"
+    />
+    <link rel="manifest" href="”manifest.json”" crossorigin="use-credentials" />
+    <title>Travel Planner - AI Powered Travel Itinerary Generator</title>
+    <meta property="twitter:image" content="https://travelplann.com/meta.png" />
+    <meta property="og:image" content="https://travelplann.com/meta.png" />
+    <meta
+      property="og:title"
+      content="Travel Planner - AI Powered Travel Assistant"
+    />
+    <meta
+      property="og:site_name"
+      content="Travel Planner - AI Powered Travel Assistant"
+    />
+    <meta property="og:url" content="https://travelplann.com" />
+    <meta
+      property="og:description"
+      content="An AI powered travel planner that creates personalized travel itineraries tailored to your preferences, budget, and schedule. Plan your next trip in minutes."
+    />
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="twitter:title"
+      content="Travel Planner - AI Powered Travel Assistant"
+    />
+    <meta
+      property="twitter:description"
+      content="An AI powered travel planner that creates personalized travel itineraries tailored to your preferences, budget, and schedule. Plan your next trip in minutes."
+    />
+    <meta property="twitter:url" content="https://travelplann.com" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@zinedkaloc" />
+    <meta name="twitter:creator" content="@zinedkaloc" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="https://travelplann.com/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="https://travelplann.com/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="https://travelplann.com/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="https://travelplann.com/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="https://travelplann.com/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="https://travelplann.com/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="https://travelplann.com/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="https://travelplann.com/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://travelplann.com/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="https://travelplann.com/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://travelplann.com/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="https://travelplann.com/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://travelplann.com/icons/favicon-16x16.png"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X7W7Q34PZG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-X7W7Q34PZG");
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

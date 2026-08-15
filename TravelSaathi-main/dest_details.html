@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene Bali</title>
+    <style>
+   /* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Dark background */
+    color: #f1f1f1; /* Light text for contrast */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1277px;
+    margin: 20px 140px;
+}
+
+/* Left section for details */
+.left-section {
+    flex: 3;
+    width:902px;
+    background-color: #111; /* Darker background for left section */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #00F260, #0575E6); /* Gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Image Gallery */
+/* Image Gallery */
+.gallery {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.gallery img {
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.gallery::-webkit-scrollbar {
+    height: 3px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Blue for scrollbar */
+    border-radius: 4px;
+}
+
+.gallery::-webkit-scrollbar-track {
+    background-color: #555; /* Darker scrollbar background */
+}
+
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    color: #f1f1f1; /* Light text */
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+    flex: 1;
+}
+
+.tabs button.active {
+    border-bottom: 3px solid #00F260; /* Gradient accent color */
+    color: #00F260; /* Matching text color */
+}
+
+/* Content below tabs */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.details h3 {
+    color: #e74c3c; /* Red heading for emphasis */
+    margin-bottom: 10px;
+}
+
+.details p {
+    color: #bbb; /* Lighter gray for paragraph text */
+    line-height: 1.6;
+}
+
+/* Right section for payment */
+.right-section {
+    flex: 1;
+    background-color: #111; /* Darker background for right section */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+    position: sticky;
+    top: 20px;
+}
+
+.price-box {
+    font-size: 24px;
+    color: #00F260; /* Green for price */
+    margin-bottom: 15px;
+}
+
+.original-price {
+    font-size: 16px;
+    color: #7f8c8d;
+    text-decoration: line-through;
+    margin-bottom: 10px;
+}
+
+.discount {
+    color: #e74c3c; /* Red discount text */
+    margin-bottom: 10px;
+}
+
+/* Payment Button */
+.payment-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db; /* Blue background */
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Coupons & Offers */
+.coupon-box {
+    margin-top: 20px;
+}
+
+.coupon-title {
+    font-size: 18px;
+    color: #f1f1f1; /* Light text */
+    margin-bottom: 10px;
+}
+
+.coupon {
+    padding: 10px;
+    background-color: #222; /* Dark background for coupon box */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.coupon strong {
+    color: #00F260; /* Green for coupon codes */
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Left Section: Main Content -->
+    <div class="left-section">
+        <!-- Destination Heading -->
+        <div class="heading">Serene Bali</div>
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+            <img src="images/himachal.jpg" alt="Bali Image 1">
+            <img src="images/goa.jpeg" alt="Bali Image 2">
+            <img src="images/rajasthan.jpg" alt="Bali Image 3">
+            <img src="images/andaman.jpeg" alt="Bali Image 4">
+            <img src="images/andaman.jpeg" alt="Bali Image 4">
+            <img src="images/andaman.jpeg" alt="Bali Image 4">
+            <img src="images/andaman.jpeg" alt="Bali Image 4">
+            <img src="images/andaman.jpeg" alt="Bali Image 4">
+            <img src="images/andaman.jpeg" alt="Bali Image 4">
+           
+            
+        </div>
+<br><br>
+        <!-- Tabs: Itinerary, Policies -->
+        <div class="tabs">
+            <button class="active" data-tab="itinerary">Itinerary</button>
+            <button data-tab="policies">Policies</button>
+            <button data-tab="summary">Summary</button>
+        </div>
+
+        <!-- Itinerary Content -->
+        <div id="itinerary" class="tab-content active">
+            <div class="details">
+                <h3>Day 1: Arrival in Bali</h3>
+                <p>Upon arrival at Bali airport, you will be transferred to your hotel. Enjoy a leisurely day exploring the vibrant surroundings.</p>
+                
+                <h3>Day 2: Bali Sightseeing</h3>
+                <p>Visit the iconic Uluwatu Temple and enjoy a stunning sunset view. In the evening, witness a traditional Kecak dance performance.</p>
+            </div>
+        </div>
+
+        <!-- Policies Content -->
+        <div id="policies" class="tab-content">
+            <div class="details">
+                <h3>Cancellation Policy</h3>
+                <p>Free cancellation up to 7 days before the trip starts. After that, 50% charges apply.</p>
+
+                <h3>Health & Safety Guidelines</h3>
+                <p>Please ensure that you follow local COVID-19 guidelines and maintain social distancing where required.</p>
+            </div>
+        </div>
+
+        <!-- Summary Content -->
+        <div id="summary" class="tab-content">
+            <div class="details">
+                <h3>Package Summary</h3>
+                <p>6 nights and 7 days trip to Bali. Includes flights, accommodations, transfers, and meals. Explore beaches, temples, and more!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Section: Payment -->
+    <div class="right-section">
+        <!-- Price Box -->
+        <div class="price-box">
+            ₹46,147 / Adult
+        </div>
+        <div class="original-price">
+            ₹51,964
+        </div>
+        <div class="discount">12% OFF</div>
+
+        <!-- Payment Button -->
+        <button class="payment-button">Proceed to Payment</button>
+
+        <!-- Coupons & Offers -->
+        <div class="coupon-box">
+            <div class="coupon-title">Coupons & Offers</div>
+            <div class="coupon">
+                <strong>GRANDOFFER</strong> - ₹5,817 Off
+            </div>
+            <div class="coupon">
+                <strong>FEDERALEMI</strong> - ₹8,554 Off
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // JavaScript for tab switching
+    const tabs = document.querySelectorAll('.tabs button');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // Remove active class from all tabs
+            tabs.forEach(btn => btn.classList.remove('active'));
+            // Add active class to the clicked tab
+            this.classList.add('active');
+
+            // Hide all tab contents
+            tabContents.forEach(content => content.classList.remove('active'));
+            // Show the relevant tab content
+            document.getElementById(this.getAttribute('data-tab')).classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSaathi Blogs and Vlogs</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #2c2c4a);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            background: -webkit-linear-gradient(135deg, #4a90e2, #d5006d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: scroll 20s linear infinite;
+            gap: 20px; /* Reduced gap for a more compact look */
+        }
+
+        .content-box {
+            position: relative;
+            width: 250px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            overflow: hidden; /* Ensures child elements stay within borders */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .content-box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .content-box:hover img {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        .content-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s;
+            padding: 10px;
+        }
+
+        .content-box:hover .content-overlay {
+            opacity: 1; /* Show content on hover */
+        }
+
+        .content-box h2 {
+            font-size: 22px;
+            margin: 0;
+            color: #ffffff; /* White text for contrast */
+        }
+
+        .content-box p {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #ffffff; /* White text for contrast */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .content-box {
+                width: 90%;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            font-size: 18px;
+            color: #99ffe6;
+        }
+    </style>
+</head>
+<body>
+    <h1>TravelSaathi Blogs & Vlogs</h1>
+    
+    <!-- Single Marquee for Both Blogs and Vlogs -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <div class="content-box">
+                <img src="images/boston.jpg" alt="Exploring the Alps">
+                <div class="content-overlay">
+                    <h2>Exploring the Alps</h2>
+                    <p>Discover the breathtaking beauty of the Alps with our latest adventure blog!</p>
+                </div>
+            </div>
+            <div class="content-box">
+                <img src="images/london.jpeg" alt="Top 5 Beach Destinations">
+                <div class="content-overlay">
+                    <h2>Top 5 Beach Destinations</h2>
+                    <p>Plan your next beach vacation with our top 5 beach picks for 2024.</p>
+                </div>
+            </div>
+            <div class="content-box">
+                <img src="https://via.placeholder.com/250x150" alt="Hidden Gems of Japan">
+                <div class="content-overlay">
+                    <h2>Hidden Gems of Japan</h2>
+                    <p>Uncover the hidden treasures of Japan in this exclusive blog post.</p>
+                </div>
+            </div>
+            <div class="content-box">
+                <img src="https://via.placeholder.com/250x150" alt="Vlog: Road Trip USA">
+                <div class="content-overlay">
+                    <h2>Vlog: Road Trip USA</h2>
+                    <p>Buckle up for an epic road trip across the United States in this vlog.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Your adventure starts here with TravelSaathi!</p>
+    </div>
+</body>
+</html>

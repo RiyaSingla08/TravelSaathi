@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Tourist Attractions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container-tourist {
+            text-align: center;
+            background-color: #2d2d4f; /* Matching deep color for dark aesthetic */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            max-width: 80%;
+            margin: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+        }
+
+        .attraction-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .attraction-item {
+            background-color: #3e3e5c; /* Unified darker shade for boxes */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .attraction-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .attraction-item img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            border-radius: 50%; /* Make the image circular */
+            filter: brightness(0.9); /* Slightly dimmed for aesthetic */
+        }
+
+        .attraction-item p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 1024px) {
+            .attraction-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .attraction-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .attraction-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-tourist">
+        <h2>Famous Tourist Attractions</h2>
+        <div class="attraction-grid">
+            <div class="attraction-item">
+                <img src="lakshadweep-icon.png" alt="Lakshadweep">
+                <p>Lakshadweep</p>
+            </div>
+            <div class="attraction-item">
+                <img src="andaman-icon.png" alt="Andaman">
+                <p>Andaman</p>
+            </div>
+            <div class="attraction-item">
+                <img src="kashmir-icon.png" alt="Kashmir">
+                <p>Kashmir</p>
+            </div>
+            <div class="attraction-item">
+                <img src="jaipur-icon.png" alt="Jaipur">
+                <p>Jaipur</p>
+            </div>
+            <div class="attraction-item">
+                <img src="bengaluru-icon.png" alt="Bengaluru">
+                <p>Bengaluru</p>
+            </div>
+            <div class="attraction-item">
+                <img src="paris-icon.png" alt="Paris">
+                <p>Paris</p>
+            </div>
+            <div class="attraction-item">
+                <img src="leh-icon.png" alt="Leh">
+                <p>Leh</p>
+            </div>
+            <div class="attraction-item">
+                <img src="bali-icon.png" alt="Bali">
+                <p>Bali</p>
+            </div>
+            <div class="attraction-item">
+                <img src="dubai-icon.png" alt="Dubai">
+                <p>Dubai</p>
+            </div>
+            <div class="attraction-item">
+                <img src="images/kerala.jpg" alt="Kerala">
+                <p>Kerala</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

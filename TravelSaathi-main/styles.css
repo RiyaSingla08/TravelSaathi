@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+.card-body {
+    margin-top: 0px;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
+}
+
+/* Card container with smooth scrolling and card gap */
+.card-container {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    min-width: 1000px;
+    margin-top: 100px;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover effects on cards */
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards become semi-transparent when not hovered */
+.card-container:hover .card {
+    opacity: 0.6;
+}
+
+.card-container .card:hover {
+    opacity: 1;
+}
+
+/* Card image */
+.card-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 5px solid #00bcd4;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Entire card is clickable */
+.card-link {
+    text-decoration: none;
+    display: block;
+}
+
+/* Adding hover animation for links */
+.card-link:hover {
+    text-decoration: none;
+}
+
+/* Make the container responsive for smaller devices */
+@media (max-width: 768px) {
+    .card-container {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card-body {
+        height: auto;
+    }
+}
+
+
+.header {
+    text-align: center; 
+    margin-bottom: 20px; 
+    position: relative; 
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+.animated-title {
+    font-size: 3em; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333; 
+    opacity: 0; /* Start hidden */
+    transform: translateY(-20px); /* Start slightly higher */
+    animation: fadeInUp 0.8s ease forwards; /* Use ease for smoother effect */
+    animation-delay: 0.2s;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-20px); /* Start higher */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+
+
+
+/* Smooth scrolling adjustments for small screens */
+@media screen and (max-width: 768px) {
+    .card-container {
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 500px;
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%; /* Stack cards in a single column on very small screens */
+    }
+}
+
+/*CSS of footer*/
+
+.footer-top {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 2rem 0;
+}
+
+.footer-top .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-top .col-md-4 {
+    flex: 1;
+    padding: 0 134px;
+    min-width: 220px; /* Prevents columns from shrinking too much */
+}
+
+.footer-top h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer-top ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-top ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-top ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-top ul li a:hover {
+    color: #adb5bd;
+}
+.footer {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.subscribe-section {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    width: 75%;
+    margin: 2rem auto;
+    max-width: 472px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff; /* White text for contrast */
+}
+
+.subscribe-section:hover {
+    transform: translateY(-5px);
+}
+
+.subscribe-section h3 {
+    color: #4da6ff; /* Use an accent color for headings */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.footer-top .text-center {
+    margin-top: 1rem;
+}
+
+.footer-top p {
+    font-size: 0.875rem;
+    color: #adb5bd;
+}
+
+/* For better spacing and responsiveness */
+@media (min-width: 768px) {
+    .footer-top .row {
+        margin-bottom: 0;
+    }
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('ai.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    filter: brightness(0.7); /* Dim the background image */
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+    z-index: 1;
+}
+
+/* Styling for the text in the Hero Section */
+.header {
+    z-index: 2; /* Ensures the text is above the background overlay */
+}
+
+.animated-title {
+    color: #f8f9fa;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Container for the button and description */
+.itinerary-container {
+    z-index: 2; /* Ensures the content is above the background overlay */
+    text-align: center; /* Center the content */
+    padding: 20px 0;
+}
+
+.itinerary-description {
+    font-size: 18px;
+    color: #f8f9fa; /* Light text color */
+    margin-bottom: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for the button */
+.itinerary-btn {
+    background-color: #FF6347; /* Professional vibrant button color */
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for a modern look */
+    transition: all 0.3s ease;
+}
+
+.itinerary-btn:hover {
+    background-color: #FF4500; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slightly lift the button on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Ensures responsive design for smaller devices */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    .animated-title {
+        font-size: 2rem;
+    }
+
+    .itinerary-description {
+        font-size: 16px;
+    }
+
+    .itinerary-btn {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+}
