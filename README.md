@@ -42,7 +42,7 @@ The platform aims to make trip planning easier by bringing all essential travel 
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/TravelSaathi.git
+   git clone https://github.com/RiyaSingla08/TravelSaathi.git
    ```
 2. Move the project folder into your XAMPP `htdocs` directory
 3. Start **Apache** and **MySQL** from the XAMPP control panel
